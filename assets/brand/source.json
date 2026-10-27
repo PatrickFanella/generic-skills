@@ -1,0 +1,51 @@
+{
+  "brand": "Generic Skills",
+  "source_repository": "subculture-collective/subcult-tv",
+  "source_revision": "aa83c8feea9cf4afb7aea38b8c77e73892e3a711",
+  "generator": "studio/brand-tools/repository_identity.py",
+  "scope": "Repository README and avatar only",
+  "assets": [
+    {
+      "source": "brands/generic-skills/repository/banner.svg",
+      "destination": "assets/brand/banner.svg",
+      "sha256": "989e4ea16c0a95413ce8c4b0b437ecdc3f8c769b61da368fed2866fc22da9ef7",
+      "transform": "unchanged copy"
+    },
+    {
+      "source": "brands/generic-skills/repository/banner.png",
+      "destination": "assets/brand/banner.png",
+      "sha256": "4867e6154102fd6bc1f650ee25af0412157836a07b07c4c7c243d80b254cfecb",
+      "transform": "unchanged copy"
+    },
+    {
+      "source": "brands/generic-skills/repository/avatar.svg",
+      "destination": "assets/brand/avatar.svg",
+      "sha256": "70c168060fc4ef99cd3dd0f9422cf3a9ec7208bab96bde1e8737087d08209ba4",
+      "transform": "unchanged copy"
+    },
+    {
+      "source": "brands/generic-skills/repository/avatar.png",
+      "destination": "assets/brand/avatar.png",
+      "sha256": "149c9cf219909ba09cbee5c6c7d32fdb81e0b55ec53d6202d0a795af40346a18",
+      "transform": "unchanged copy"
+    },
+    {
+      "source": "brand-tools/fonts/spacegrotesk-OFL.txt",
+      "destination": "assets/brand/licenses/spacegrotesk-OFL.txt",
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72",
+      "transform": "unchanged copy"
+    },
+    {
+      "source": "brand-tools/fonts/publicsans-OFL.txt",
+      "destination": "assets/brand/licenses/publicsans-OFL.txt",
+      "sha256": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+      "transform": "unchanged copy"
+    },
+    {
+      "source": "brand-tools/fonts/jetbrainsmono-OFL.txt",
+      "destination": "assets/brand/licenses/jetbrainsmono-OFL.txt",
+      "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d",
+      "transform": "unchanged copy"
+    }
+  ]
+}

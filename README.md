@@ -1,5 +1,7 @@
 # Generic Skills
 
+![Generic Skills repository banner](assets/brand/banner.png)
+
 A portable collection of 48 agent skills for software development, review,
 debugging, research, and writing. Each skill includes the references and helpers
 its entrypoint uses. Choose skills individually for the work you do.
@@ -101,3 +103,7 @@ Original repository packaging and original material without another grant use
 [GPL-3.0-or-later](LICENSE). Imported skills retain their MIT or Apache-2.0 grants;
 see each skill's license, bundled notices, and `provenance.json`. Those grants
 are preserved. Bundled frontend data retains its separate MIT notice.
+
+## Repository artwork
+
+[Brand assets and usage](assets/brand/README.md).

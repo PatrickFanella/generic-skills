@@ -532,7 +532,16 @@
     ".gitignore": "dfccd2d4a57094f6702cf1f1c82dd86b390af24f9238e595bf8b3dfe86a7eafc",
     "AGENTS.md": "ba104188260cd83bae9e39447c2dd2fd76d13644c041522b259029409fe7883b",
     "LICENSE": "fb981668c18a279e285fc4d83fba1e836cc84dd4daa73c9697d3cfd2d8aca6e0",
-    "README.md": "23514f57c1418e034e16f98fda453fd104d034ec7afddb96195be9052fccb7c3",
+    "README.md": "9a0c591d6eccfec90fba529c18838e8a2e4b5656ad58d2744383a8f9f152e71c",
+    "assets/brand/README.md": "8a62bee8087835e72ce9674e12004f064cf198b7d71272478964c1fbcc702675",
+    "assets/brand/avatar.png": "149c9cf219909ba09cbee5c6c7d32fdb81e0b55ec53d6202d0a795af40346a18",
+    "assets/brand/avatar.svg": "70c168060fc4ef99cd3dd0f9422cf3a9ec7208bab96bde1e8737087d08209ba4",
+    "assets/brand/banner.png": "4867e6154102fd6bc1f650ee25af0412157836a07b07c4c7c243d80b254cfecb",
+    "assets/brand/banner.svg": "989e4ea16c0a95413ce8c4b0b437ecdc3f8c769b61da368fed2866fc22da9ef7",
+    "assets/brand/licenses/jetbrainsmono-OFL.txt": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d",
+    "assets/brand/licenses/publicsans-OFL.txt": "157a9e77f7580246e97c769490e2e977ae94399f9d30f4556015c41fe8c28bac",
+    "assets/brand/licenses/spacegrotesk-OFL.txt": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72",
+    "assets/brand/source.json": "f7e29ffcd425c081ab9cd633469c47695c1d00dac303156260d45e09f3ac8db3",
     "notices/apache-2.0-skills.txt": "9ea096648a0f124394ce60778aae3b57db01c12b005e70cdc6349b0f263264b2",
     "notices/blacktower-MIT.txt": "2470f8d032270b7144e9d8f04063f9898cd72ae06a5ae730052c9b65e899c53e",
     "notices/cursor-plugins-mit.txt": "028b393ebeea6eae770c6a2e3ab2f471cd6c192b4155ef911c79f4be30acc407",
@@ -1626,6 +1635,7 @@
   "adaptations": [
     "Compatibility fields in three entrypoints moved into supported metadata.",
     "Blacktower notice paths adapted to the public package layout.",
-    "WebSocket handshake example uses the canonical RFC 6455 nonce."
+    "WebSocket handshake example uses the canonical RFC 6455 nonce.",
+    "Repository artwork selected from the maintained Studio pack; source hashes recorded in assets/brand/source.json."
   ]
 }
