@@ -3,76 +3,84 @@
 ![Generic Skills repository banner](assets/brand/banner.png)
 
 A portable collection of 48 agent skills for software development, review,
-debugging, research, and writing. Each skill includes the references and helpers
-its entrypoint uses. Choose skills individually for the work you do.
+debugging, research, and writing. It is the public edition of patstack, the
+SUBCULT agent skill stack, with workstation and organization specifics removed.
+Each skill includes the references and helpers its entrypoint uses.
 
 ## Install
 
-Clone this repository and copy selected directories from `skills/` into your
-agent's skill directory. For Codex, that directory is `~/.codex/skills/`:
+**With Subsets.** [Subsets](https://subsets.subcult.tv) offers this collection
+on its first interactive run as the `patstack` pack. Accept the prompt, or add it
+later with `subsets pack add patstack`. The skills arrive inactive, grouped as
+`patstack`; turn them on with `subsets apply --group patstack`.
+
+**From npm.** The package is `@subcult/patstack`. It installs nothing into
+your agent directories by itself:
 
 ```sh
-git clone https://github.com/PatrickFanella/generic-skills.git
-mkdir -p ~/.codex/skills
-cp -R generic-skills/skills/systematic-debugging ~/.codex/skills/
+npm pack @subcult/patstack
+tar -xzf subcult-patstack-*.tgz
+cp -R package/skills/bug-tracer ~/.codex/skills/
 ```
 
-Copy the complete skill directory so its references and scripts stay together.
-Review an existing installation before replacing it. Other agents can use the
-same `SKILL.md` files when they support that format; tool availability and
-invocation behavior depend on the client. Skills do not grant permission to
-publish, deploy, delete, or change external services.
+**From the repository.** Clone it and copy the skill directories you want into
+your agent's skill directory (for Codex, `~/.codex/skills/`). Copy a complete
+directory so its references and scripts stay together, and review an existing
+installation before replacing it. Other agents can use the same `SKILL.md`
+files when they support that format; tool availability and invocation behavior
+depend on the client. Skills do not grant permission to publish, deploy,
+delete, or change external services.
 
 ## Included skills
 
-- [`api-development`](skills/api-development/SKILL.md)
-- [`architecture-patterns`](skills/architecture-patterns/SKILL.md)
-- [`auth-implementation-patterns`](skills/auth-implementation-patterns/SKILL.md)
-- [`ci-maintenance`](skills/ci-maintenance/SKILL.md)
-- [`cli-developer`](skills/cli-developer/SKILL.md)
-- [`clonedeps`](skills/clonedeps/SKILL.md)
-- [`cloudflare-deploy`](skills/cloudflare-deploy/SKILL.md)
-- [`code-review`](skills/code-review/SKILL.md)
-- [`codemap`](skills/codemap/SKILL.md)
-- [`codemod-surgeon`](skills/codemod-surgeon/SKILL.md)
-- [`database-migration`](skills/database-migration/SKILL.md)
-- [`dependency-upgrade`](skills/dependency-upgrade/SKILL.md)
-- [`frontend-design`](skills/frontend-design/SKILL.md)
-- [`gdpr-data-handling`](skills/gdpr-data-handling/SKILL.md)
-- [`git-advanced-workflows`](skills/git-advanced-workflows/SKILL.md)
-- [`gitea-repo-overhaul`](skills/gitea-repo-overhaul/SKILL.md)
-- [`golang-pro`](skills/golang-pro/SKILL.md)
-- [`implementation-plan`](skills/implementation-plan/SKILL.md)
-- [`llm-evaluation`](skills/llm-evaluation/SKILL.md)
-- [`mcp-builder`](skills/mcp-builder/SKILL.md)
-- [`mcp-integration-lifecycle`](skills/mcp-integration-lifecycle/SKILL.md)
-- [`mtls-configuration`](skills/mtls-configuration/SKILL.md)
-- [`observability`](skills/observability/SKILL.md)
-- [`performance-investigation`](skills/performance-investigation/SKILL.md)
-- [`playwright`](skills/playwright/SKILL.md)
-- [`postgres-pro`](skills/postgres-pro/SKILL.md)
-- [`prototype`](skills/prototype/SKILL.md)
-- [`python-development`](skills/python-development/SKILL.md)
-- [`rag-implementation`](skills/rag-implementation/SKILL.md)
-- [`react-pro`](skills/react-pro/SKILL.md)
-- [`refactor`](skills/refactor/SKILL.md)
-- [`repository-delivery-review`](skills/repository-delivery-review/SKILL.md)
-- [`requirements-interview`](skills/requirements-interview/SKILL.md)
-- [`rust-pro`](skills/rust-pro/SKILL.md)
-- [`secrets-management`](skills/secrets-management/SKILL.md)
-- [`security-best-practices`](skills/security-best-practices/SKILL.md)
-- [`security-ownership-map`](skills/security-ownership-map/SKILL.md)
-- [`security-threat-model`](skills/security-threat-model/SKILL.md)
-- [`session-handoff`](skills/session-handoff/SKILL.md)
-- [`shell-development`](skills/shell-development/SKILL.md)
-- [`systematic-debugging`](skills/systematic-debugging/SKILL.md)
-- [`tdd`](skills/tdd/SKILL.md)
-- [`technical-writing`](skills/technical-writing/SKILL.md)
-- [`typescript-pro`](skills/typescript-pro/SKILL.md)
-- [`unslop`](skills/unslop/SKILL.md)
-- [`verify-behavior`](skills/verify-behavior/SKILL.md)
-- [`wcag-audit-patterns`](skills/wcag-audit-patterns/SKILL.md)
-- [`wizard`](skills/wizard/SKILL.md)
+- [`api-contract-smith`](skills/api-contract-smith/SKILL.md)
+- [`auth-gatekeeper`](skills/auth-gatekeeper/SKILL.md)
+- [`bash-script-craft`](skills/bash-script-craft/SKILL.md)
+- [`behavior-proof`](skills/behavior-proof/SKILL.md)
+- [`boundary-drafter`](skills/boundary-drafter/SKILL.md)
+- [`bug-tracer`](skills/bug-tracer/SKILL.md)
+- [`build-sequencer`](skills/build-sequencer/SKILL.md)
+- [`bus-factor-map`](skills/bus-factor-map/SKILL.md)
+- [`cf-edge-deploy`](skills/cf-edge-deploy/SKILL.md)
+- [`ci-medic`](skills/ci-medic/SKILL.md)
+- [`cli-contract-smith`](skills/cli-contract-smith/SKILL.md)
+- [`dep-source-clone`](skills/dep-source-clone/SKILL.md)
+- [`dep-upgrade-pilot`](skills/dep-upgrade-pilot/SKILL.md)
+- [`diff-inspector`](skills/diff-inspector/SKILL.md)
+- [`eval-bench`](skills/eval-bench/SKILL.md)
+- [`git-surgery`](skills/git-surgery/SKILL.md)
+- [`gitea-fleet-tidy`](skills/gitea-fleet-tidy/SKILL.md)
+- [`go-craft`](skills/go-craft/SKILL.md)
+- [`mcp-server-forge`](skills/mcp-server-forge/SKILL.md)
+- [`mcp-wire-tracer`](skills/mcp-wire-tracer/SKILL.md)
+- [`mtls-trust-chain`](skills/mtls-trust-chain/SKILL.md)
+- [`perf-hotpath-probe`](skills/perf-hotpath-probe/SKILL.md)
+- [`pg-plan-reader`](skills/pg-plan-reader/SKILL.md)
+- [`playwright-cli-driver`](skills/playwright-cli-driver/SKILL.md)
+- [`privacy-controls`](skills/privacy-controls/SKILL.md)
+- [`prose-unslop`](skills/prose-unslop/SKILL.md)
+- [`python-uv-workbench`](skills/python-uv-workbench/SKILL.md)
+- [`react-render-tuner`](skills/react-render-tuner/SKILL.md)
+- [`red-green-loop`](skills/red-green-loop/SKILL.md)
+- [`relay-baton`](skills/relay-baton/SKILL.md)
+- [`repo-atlas`](skills/repo-atlas/SKILL.md)
+- [`retrieval-pipeline`](skills/retrieval-pipeline/SKILL.md)
+- [`rust-ownership-async`](skills/rust-ownership-async/SKILL.md)
+- [`safe-refactor-pass`](skills/safe-refactor-pass/SKILL.md)
+- [`schema-migrator`](skills/schema-migrator/SKILL.md)
+- [`scope-grill`](skills/scope-grill/SKILL.md)
+- [`secret-rotation-flow`](skills/secret-rotation-flow/SKILL.md)
+- [`secure-code-audit`](skills/secure-code-audit/SKILL.md)
+- [`setup-wizard-script`](skills/setup-wizard-script/SKILL.md)
+- [`ship-check`](skills/ship-check/SKILL.md)
+- [`stride-threat-map`](skills/stride-threat-map/SKILL.md)
+- [`sweep-rewriter`](skills/sweep-rewriter/SKILL.md)
+- [`tech-doc-writer`](skills/tech-doc-writer/SKILL.md)
+- [`telemetry-signal-forge`](skills/telemetry-signal-forge/SKILL.md)
+- [`throwaway-prototype`](skills/throwaway-prototype/SKILL.md)
+- [`ts-type-design`](skills/ts-type-design/SKILL.md)
+- [`ui-craft`](skills/ui-craft/SKILL.md)
+- [`wcag-a11y-audit`](skills/wcag-a11y-audit/SKILL.md)
 
 ## Validation and CI
 
@@ -87,6 +95,12 @@ behavior across agent clients. Gitea runs package validation; the GitHub copy
 has Actions disabled.
 
 ## Source and updates
+
+The skills are exported from patstack by its `scripts/public-edition.py`, which
+applies the reviewed substitutions and refuses an export that still contains
+host names, private paths or account names. Change a skill in patstack, then
+export it here; edits made only in this repository are overwritten by the next
+export.
 
 The development source is [Generic Skills on Gitea](https://git.subcult.tv/subculture-collective/generic-skills).
 GitHub receives its default branch through a conservative publishing mirror.
