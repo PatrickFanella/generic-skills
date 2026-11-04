@@ -1,0 +1,34 @@
+{
+  "name": "@subcult/patstack",
+  "version": "0.1.0",
+  "description": "Portable agent skills for development, review, debugging, research and writing: the public edition of patstack.",
+  "license": "GPL-3.0-or-later AND MIT AND Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://git.subcult.tv/subculture-collective/generic-skills.git"
+  },
+  "homepage": "https://subsets.subcult.tv",
+  "keywords": [
+    "agent-skills",
+    "skills",
+    "codex",
+    "claude-code",
+    "opencode",
+    "subsets"
+  ],
+  "files": [
+    "skills",
+    "notices",
+    "provenance.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "subsets": {
+    "pack": "patstack",
+    "skills": "skills"
+  }
+}
