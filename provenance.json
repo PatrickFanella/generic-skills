@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "source_snapshot": "e73d5973e41cfbf7c15b99e62839dd2ea4d849ac",
+  "source_snapshot": "4e7d61d3a4f0dd915c175c360921fe09dff17bd3",
   "skills": [
     {
       "origin": "curated",
@@ -394,7 +394,7 @@
     ".gitignore": "447c05a4b09d167a0fa4b07ec1fc31f9d97c5eb81ad4b93ff6c4ebe1d2b97854",
     "AGENTS.md": "ba104188260cd83bae9e39447c2dd2fd76d13644c041522b259029409fe7883b",
     "LICENSE": "fb981668c18a279e285fc4d83fba1e836cc84dd4daa73c9697d3cfd2d8aca6e0",
-    "README.md": "d6466e2b13167a1dd0ad30965d57768c8ac4681690e4407a8ea54fe8523b5647",
+    "README.md": "4764de17ee282714a760f0c852f1f94e302c641843acb0794d0200f074e7f3a1",
     "assets/brand/README.md": "8a62bee8087835e72ce9674e12004f064cf198b7d71272478964c1fbcc702675",
     "assets/brand/avatar.png": "149c9cf219909ba09cbee5c6c7d32fdb81e0b55ec53d6202d0a795af40346a18",
     "assets/brand/avatar.svg": "70c168060fc4ef99cd3dd0f9422cf3a9ec7208bab96bde1e8737087d08209ba4",

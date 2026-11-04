@@ -111,6 +111,14 @@ organization. Review changed resources, refresh the corresponding hashes in
 `provenance.json`, and validate before publishing. The provenance manifest lists
 the exported inputs and original license grants.
 
+## Releases
+
+A `v*` tag matching `package.json` validates the tagged commit, packs it once and
+publishes that tarball as `@subcult/patstack` to the Gitea npm registry and public
+npm, then attaches it to a Gitea release (`.gitea/workflows/release.yml`). Public
+npm needs the repository secret `NPM_TOKEN`. "Run workflow" with publish off
+checks the package and both registry logins without publishing.
+
 ## License
 
 Original repository packaging and original material without another grant use
