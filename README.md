@@ -65,6 +65,7 @@ delete, or change external services.
 - [`relay-baton`](skills/relay-baton/SKILL.md)
 - [`repo-atlas`](skills/repo-atlas/SKILL.md)
 - [`retrieval-pipeline`](skills/retrieval-pipeline/SKILL.md)
+- [`roadmap-slicer`](skills/roadmap-slicer/SKILL.md)
 - [`rust-ownership-async`](skills/rust-ownership-async/SKILL.md)
 - [`safe-refactor-pass`](skills/safe-refactor-pass/SKILL.md)
 - [`schema-migrator`](skills/schema-migrator/SKILL.md)
