@@ -9,7 +9,7 @@ metadata:
   compatibility: Profiling and benchmark commands depend on the project runtime; use only tools already available in the target environment unless the user approves installation.
 ---
 
-# Performance Investigation
+# perf-hotpath-probe
 
 Treat performance as an evidence problem. Preserve behavior, measure the same
 workload before and after changes, and avoid optimizing code that is not on the
