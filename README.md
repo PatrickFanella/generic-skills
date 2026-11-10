@@ -2,34 +2,24 @@
 
 ![Generic Skills repository banner](assets/brand/banner.png)
 
-A portable collection of 48 agent skills for software development, review,
-debugging, research, and writing. It is the public edition of patstack, the
-SUBCULT agent skill stack, with workstation and organization specifics removed.
-Each skill includes the references and helpers its entrypoint uses.
+A collection of 49 skills for coding agents, covering software development, code review, debugging, security, research and writing. A skill is a folder with a `SKILL.md` entrypoint plus the references and helper scripts it uses; agents such as Codex, Claude Code and OpenCode load it when a task matches its description.
+
+This is the portable edition of [patstack](https://github.com/subculture-collective/patstack), with personal and organization-specific details removed.
 
 ## Install
 
-**With Subsets.** [Subsets](https://subsets.subcult.tv) offers this collection
-on its first interactive run as the `patstack` pack. Accept the prompt, or add it
-later with `subsets pack add patstack`. The skills arrive inactive, grouped as
-`patstack`; turn them on with `subsets apply --group patstack`.
-
-**From npm.** The package is `@subcult/patstack`. It installs nothing into
-your agent directories by itself:
+Clone the repository and copy the skill folders you want into your agent's skill directory, for example `~/.codex/skills/` for Codex or `~/.claude/skills/` for Claude Code:
 
 ```sh
-npm pack @subcult/patstack
-tar -xzf subcult-patstack-*.tgz
-cp -R package/skills/bug-tracer ~/.codex/skills/
+git clone https://github.com/subculture-collective/generic-skills.git
+cp -R generic-skills/skills/bug-tracer ~/.codex/skills/
 ```
 
-**From the repository.** Clone it and copy the skill directories you want into
-your agent's skill directory (for Codex, `~/.codex/skills/`). Copy a complete
-directory so its references and scripts stay together, and review an existing
-installation before replacing it. Other agents can use the same `SKILL.md`
-files when they support that format; tool availability and invocation behavior
-depend on the client. Skills do not grant permission to publish, deploy,
-delete, or change external services.
+Copy a whole folder so its references and scripts stay together, and check for an existing skill of the same name before replacing it. Start a new agent session afterwards so the client discovers the skill. How tools are invoked depends on the client.
+
+The repository is also packaged as `@subcult/patstack`, which [Subsets](https://github.com/subculture-collective/subsets) can install as its `patstack` pack. That package is not published on the public npm registry.
+
+Skills only give instructions. They do not grant an agent permission to publish, deploy, delete or change external services.
 
 ## Included skills
 
@@ -83,50 +73,23 @@ delete, or change external services.
 - [`ui-craft`](skills/ui-craft/SKILL.md)
 - [`wcag-a11y-audit`](skills/wcag-a11y-audit/SKILL.md)
 
-## Validation and CI
+## Validation
 
 ```sh
 python3 -m pip install PyYAML==6.0.3
 python3 scripts/validate.py
 ```
 
-The validator checks entrypoints, local entrypoint links, licenses, the skill
-inventory, and reviewed file hashes. It does not run every helper or establish
-behavior across agent clients. Gitea runs package validation; the GitHub copy
-has Actions disabled.
+The validator checks each entrypoint's frontmatter and local links, that every skill has a license, that the skill list matches `provenance.json`, and that every file matches its reviewed SHA-256 hash in `provenance.json`. It does not run helper scripts or test skills in an agent.
 
-## Source and updates
+## Contributing
 
-The skills are exported from patstack by its `scripts/public-edition.py`, which
-applies the reviewed substitutions and refuses an export that still contains
-host names, private paths or account names. Change a skill in patstack, then
-export it here; edits made only in this repository are overwritten by the next
-export.
+Report bugs and request features in [GitHub issues](https://github.com/subculture-collective/generic-skills/issues). Open pull requests on GitHub against `main`; CI runs `scripts/validate.py` on every pull request.
 
-The development source is [Generic Skills on Gitea](https://git.subcult.tv/subculture-collective/generic-skills).
-GitHub receives its default branch through a conservative publishing mirror.
-This repository starts with reviewed exported files and fresh history.
-
-Changes here should remain useful outside a particular workstation, fleet, or
-organization. Review changed resources, refresh the corresponding hashes in
-`provenance.json`, and validate before publishing. The provenance manifest lists
-the exported inputs and original license grants.
-
-## Releases
-
-A `v*` tag matching `package.json` validates the tagged commit, packs it once and
-publishes that tarball as `@subcult/patstack` to the Gitea npm registry and public
-npm, then attaches it to a Gitea release (`.gitea/workflows/release.yml`). Public
-npm needs the repository secret `NPM_TOKEN`. "Run workflow" with publish off
-checks the package and both registry logins without publishing.
+The skills are exported from patstack by its `scripts/public-edition.py`, so a change made only here is overwritten by the next export. Fix a skill in patstack where you can. Any change here must update the file's hash in `provenance.json`, or validation fails. Keep skills free of host names, private paths and account names.
 
 ## License
 
-Original repository packaging and original material without another grant use
-[GPL-3.0-or-later](LICENSE). Imported skills retain their MIT or Apache-2.0 grants;
-see each skill's license, bundled notices, and `provenance.json`. Those grants
-are preserved. Bundled frontend data retains its separate MIT notice.
+Original packaging and original material without another grant are licensed under [GPL-3.0-or-later](LICENSE). Imported skills keep their MIT or Apache-2.0 grants: see each skill's own license file, the files in `notices/` and `provenance.json`. Bundled frontend data keeps its separate MIT notice.
 
-## Repository artwork
-
-[Brand assets and usage](assets/brand/README.md).
+Repository artwork: [assets/brand](assets/brand/README.md).
