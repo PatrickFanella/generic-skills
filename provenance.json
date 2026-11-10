@@ -397,6 +397,8 @@
   ],
   "notes": "A reviewed export with fresh history. Existing MIT and Apache grants are retained; original packaging uses GPL-3.0-or-later.",
   "files": {
+    ".github/workflows/auto-merge.yml": "5c7a964e6b8015b476543d13723fcc06615312a0ca2f282b393dabb72f02e5a1",
+    ".github/workflows/pr-ci.yml": "57a99788519193ae286d1759c2bbbfb5c9d889e5f0a215457206228159810875",
     ".gitea/workflows/release.yml": "90ae0af880f84ddee633492a5e2743a983238e1c30fba32dc4300930ef2beba1",
     ".gitea/workflows/validate.yml": "d095efe90f128c35b1c02104409a2bfa4aa5666300d6d49f0e1376b2ad6572d1",
     ".gitignore": "447c05a4b09d167a0fa4b07ec1fc31f9d97c5eb81ad4b93ff6c4ebe1d2b97854",
